@@ -1,0 +1,65 @@
+.grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.grid th,
+.grid td {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.grid th {
+    font-weight: bold;
+}
+
+.grid th:first-child,
+.grid td:first-child {
+    text-align: center;
+    width: 40px;
+}
+
+.grid th span {
+    font-size: 1em;
+}
+
+.grid tbody tr.grid-row-selected {
+    background-color: #D7E3F5;
+}
+
+.grid tbody tr.grid-row-selected:hover {
+    background-color: #C3D5EF;
+}
+
+.grid tbody tr:hover {
+    cursor: pointer;
+    background-color: #E8E8E8;
+}
+
+.grid tbody tr:focus {
+    outline: 2px solid blue;
+}
+
+.full-width-row th {
+    text-align: left;
+}
+
+.grid-header-toolbar-custom-actions-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+/* Ensure WCAG compliance by making the element accessible to screen readers but visually hidden from end users */
+.visually-hidden-wcag {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+#selected-counter {
+    width: 105px;
+}
